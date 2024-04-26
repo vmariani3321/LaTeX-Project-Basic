@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.4.16)  26 APR 2024 09:03
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.4.16)  26 APR 2024 09:41
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -56,9 +56,7 @@ Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
 )) (c:/texlive/2024/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count195
-)) (c:/texlive/2024/texmf-dist/tex/latex/tools/indentfirst.sty
-Package: indentfirst 2023/07/02 v1.03 Indent first paragraph (DPC)
-) (c:/texlive/2024/texmf-dist/tex/latex/fontspec/fontspec.sty (c:/texlive/2024/texmf-dist/tex/latex/l3packages/xparse/xparse.sty (c:/texlive/2024/texmf-dist/tex/latex/l3kernel/expl3.sty
+)) (c:/texlive/2024/texmf-dist/tex/latex/fontspec/fontspec.sty (c:/texlive/2024/texmf-dist/tex/latex/l3packages/xparse/xparse.sty (c:/texlive/2024/texmf-dist/tex/latex/l3kernel/expl3.sty
 Package: expl3 2024-03-14 L3 programming layer (loader) 
  (c:/texlive/2024/texmf-dist/tex/latex/l3backend/l3backend-xetex.def
 File: l3backend-xetex.def 2024-03-14 L3 backend support: XeTeX
@@ -527,30 +525,34 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 18.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 18.
-
-Underfull \hbox (badness 10000) in paragraph at lines 20--21
-
- []
-
 (.vstex/README.toc)
 \tf@toc=\write4
 \openout4 = `README.toc'.
 
  [1
 
-] (.vstex/README.aux)
+]
+
+LaTeX Font Warning: Font shape `TU/FiraMono(0)/m/it' undefined
+(Font)              using `TU/FiraMono(0)/m/n' instead on input line 66.
+
+[2] (.vstex/README.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-03-14>
  ***********
+
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
  ) 
 Here is how much of TeX's memory you used:
- 16279 strings out of 474761
- 371090 string characters out of 5761074
- 1930148 words of memory out of 5000000
- 38151 multiletter control sequences out of 15000+600000
+ 16265 strings out of 474761
+ 370627 string characters out of 5761074
+ 1931148 words of memory out of 5000000
+ 38140 multiletter control sequences out of 15000+600000
  558293 words of font info for 64 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  122i,5n,124p,1296b,239s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on .vstex/README.xdv (1 page, 22244 bytes).
+Output written on .vstex/README.xdv (2 pages, 40984 bytes).

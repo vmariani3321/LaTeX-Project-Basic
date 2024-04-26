@@ -2,9 +2,9 @@
 
 %% Formatting
 \usepackage[margin = 1in]{geometry}
-\usepackage[indent = 0.3in, skip = 0.25\baselineskip]{parskip}
-\pagestyle{empty}
-\usepackage{indentfirst}
+\usepackage[indent = 0in, skip = 0.25\baselineskip]{parskip}
+	% \pagestyle{empty}
+% \usepackage{indentfirst}
 
 \usepackage{fontspec}
     \setmainfont{Charis SIL}
@@ -32,10 +32,10 @@
 %% Outline
 
 \usepackage{outlines}
-    \renewcommand{\outlinei}{enumerate}
-    \renewcommand{\outlineii}{enumerate}
-    \renewcommand{\outlineiii}{enumerate}
-    \renewcommand{\outlineiiii}{enumerate}
+    % \renewcommand{\outlinei}{enumerate}
+    % \renewcommand{\outlineii}{enumerate}
+    % \renewcommand{\outlineiii}{enumerate}
+    % \renewcommand{\outlineiiii}{enumerate}
 
 %% Title 
 \makeatletter
@@ -47,6 +47,7 @@
 	\begin{center}
 		\textbf{\@title}
 	\end{center}
+	\vspace*{\baselineskip}
 } 
     \newcommand{\maketitlecourse}{%
 		\renewcommand{\maketitle}{%
@@ -54,8 +55,9 @@
 		\@course\\
 		\@date
 		\begin{center}
-			\textbf{\@title}
+			\textbf{\@title}\\
 		\end{center}
+		\vspace*{\baselineskip}
 		} 
 } 
 \makeatother

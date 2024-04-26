@@ -6,7 +6,7 @@
 
 
 %%%% Titling %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\author{Vincent N. Mariani}
+\author{Vincent N. Mariani\\vmariani@udel.edu}
 \date{\today}
 \course{}
 \title{LaTeX Basic Template (v0.1)}
@@ -17,12 +17,13 @@
 
 This folder contains the essential files for a basic paper in \LaTeX. 
 
-Files:\\
-\begin{itemize}
-    \item README.pdf
-    \item preamble.tex
-    \item root.tex
-\end{itemize}
+\begin{outline}
+    \0 Files:
+        \1 README.pdf
+        \1 preamble.tex
+        \1 root.tex
+\end{outline}
+
 
 \tableofcontents
 
@@ -47,11 +48,11 @@ The preamble to a LaTeX document consists of everything before \texttt{\textback
 In this folder, there is a ``preamble.tex'' file that contains formatting and layout packages and settings. This bit of the README goes over what's in there: 
 
 
-\subsubsection{Formatting}
+\subsection{Packages and Commands Explained}
 
 Packages: \texttt{geometry, parskip, indentfirst, fontspec}
 
-1. \texttt{geometry}
+\subsubsection{geometry} \texttt{geometry}
 
     The package \texttt{geometry} provides settings related to page layout and size. The default setting for this template is \texttt{[margin = 1in]}, providing 1in margins all around. 
 
@@ -59,9 +60,34 @@ Packages: \texttt{geometry, parskip, indentfirst, fontspec}
 
     \begin{itemize}
         \item \texttt{left, right, top, bottom}: These will set the margins individually. Use the same syntax as \texttt{[margin = 1in]}, so \texttt{[left = 1in]}
+        \item \texttt{paperwidth, paperheight}: Sets custom page size
     \end{itemize}
 
+\subsubsection{\texttt{parskip}}
 
+    The package \texttt{parskip} sets the paragraph indent size and skip size between paragraphs. 
+
+\subsubsection{indentfirst}
+
+    Indents the first paragraph of each section (\LaTeX default is to not indent that)
+
+\subsubsection{fontspec}
+
+    The package \texttt{fontspec} is a powerful font engine for \LaTeX. Do note that you need to compile using either XeLaTeX or LuaLaTeX for this to work; pdfLaTeX will crash. 
+
+    The template sets ``Charis SIL'' as the default font, which is a nice serif font with support for the full IPA. Note that 11pt Charis is similar to 12pt Times New Roman. If you're running this on your computer (i.e., not Overleaf), you can sub this for any installed font on your system. 
+
+    Some useful package options:
+
+    Some useful package commands:
+
+\subsubsection{fancyhdr}
+
+    \texttt{\textbackslash pagestyle{empty}}
+
+\subsubsection{titlesec}
+
+\subsubsection{Outline}
 
 %%%% End Document %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \end{document}

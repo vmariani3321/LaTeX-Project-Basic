@@ -5,4 +5,11 @@
 \contentsline {section}{\numberline {2}The Preamble}{1}{}%
 \contentsline {subsection}{\numberline {2.1}What's a preamble?}{1}{}%
 \contentsline {subsection}{\numberline {2.2}Using preamble.tex}{1}{}%
-\contentsline {subsubsection}{\numberline {2.2.1}Formatting}{1}{}%
+\contentsline {subsection}{\numberline {2.3}Packages and Commands Explained}{1}{}%
+\contentsline {subsubsection}{\numberline {2.3.1}geometry}{1}{}%
+\contentsline {subsubsection}{\numberline {2.3.2}\texttt {parskip}}{2}{}%
+\contentsline {subsubsection}{\numberline {2.3.3}indentfirst}{2}{}%
+\contentsline {subsubsection}{\numberline {2.3.4}fontspec}{2}{}%
+\contentsline {subsubsection}{\numberline {2.3.5}fancyhdr}{2}{}%
+\contentsline {subsubsection}{\numberline {2.3.6}titlesec}{2}{}%
+\contentsline {subsubsection}{\numberline {2.3.7}Outline}{2}{}%

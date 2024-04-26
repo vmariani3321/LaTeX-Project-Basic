@@ -1,14 +1,14 @@
 # Fdb version 4
-["xdvipdfmx"] 1714136612.53786 ".vstex/README.xdv" ".vstex/README.pdf" ".vstex/README" 1714136613.79253 0
-  ".vstex/README.xdv" 1714136612 22244 02a14db2517a28723d3448eceb227dd5 "xelatex"
+["xdvipdfmx"] 1714138875.34689 ".vstex/README.xdv" ".vstex/README.pdf" ".vstex/README" 1714138876.48104 0
+  ".vstex/README.xdv" 1714138875 40984 16cf969798d28109f5b8ca9adf5b6447 "xelatex"
   (generated)
   ".vstex/README.pdf"
   (rewritten before read)
-["xelatex"] 1714136610.61755 "c:/Users/vmari/OneDrive - University of Delaware - o365/LaTeX Templates/LaTeX Project Basic/README/README.tex" ".vstex/README.xdv" "README" 1714136613.78733 0
-  ".vstex/README.aux" 1714136612 907 954e22a3fafc2f54fcdd713e5791fed4 "xelatex"
-  ".vstex/README.toc" 1714136612 546 4daa2e03a2a29cfd2bd0513d5504413c "xelatex"
-  "README.tex" 1714136607 1936 5d4e6fcaecd8e145f10c3fee59309d40 ""
-  "c:/Users/vmari/OneDrive - University of Delaware - o365/LaTeX Templates/LaTeX Project Basic/README/README.tex" 1714136607 1936 5d4e6fcaecd8e145f10c3fee59309d40 ""
+["xelatex"] 1714138873.53836 "c:/Users/vmari/OneDrive - University of Delaware - o365/LaTeX Templates/LaTeX Project Basic/README/README.tex" ".vstex/README.xdv" "README" 1714138876.47716 0
+  ".vstex/README.aux" 1714138875 1677 ab6dd9f4ba6acf05ff74447ce88422f5 "xelatex"
+  ".vstex/README.toc" 1714138875 1028 db5af7a780f7a80e10de1c6a4bcf62f2 "xelatex"
+  "README.tex" 1714138872 3040 1fd0d490227d49a5a72bda24d73bd41f ""
+  "c:/Users/vmari/OneDrive - University of Delaware - o365/LaTeX Templates/LaTeX Project Basic/README/README.tex" 1714138872 3040 1fd0d490227d49a5a72bda24d73bd41f ""
   "c:/texlive/2024/texmf-dist/tex/generic/iftex/iftex.sty" 1713300799 7237 bdd120a32c8fdb4b433cf9ca2e7cd98a ""
   "c:/texlive/2024/texmf-dist/tex/generic/iftex/ifvtex.sty" 1713300799 1057 525c2192b5febbd8c1f662c9468335bb ""
   "c:/texlive/2024/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty" 1713301286 17865 1a9bd36b4f98178fa551aca822290953 ""
@@ -107,13 +107,12 @@
   "c:/texlive/2024/texmf-dist/tex/latex/titlesec/titlesec.sty" 1713304138 48766 0b93839be28e9744a24c45075c75b2e2 ""
   "c:/texlive/2024/texmf-dist/tex/latex/todonotes/todonotes.sty" 1713304194 21404 916e19cbd009b6d289c8194b313d3895 ""
   "c:/texlive/2024/texmf-dist/tex/latex/tools/calc.sty" 1713304202 10214 547fd4d29642cb7c80bf54b49d447f01 ""
-  "c:/texlive/2024/texmf-dist/tex/latex/tools/indentfirst.sty" 1713304202 1618 c5f08dcf49a56107311a81073b35fa4e ""
   "c:/texlive/2024/texmf-dist/tex/latex/xcolor/xcolor.sty" 1713304697 55487 80a65caedd3722f4c20a14a69e785d8f ""
   "c:/texlive/2024/texmf-dist/tex/latex/xkeyval/xkeyval.sty" 1713304783 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
   "c:/texlive/2024/texmf-dist/web2c/texmf.cnf" 1713298815 41983 7ec6bfd6bf34339a61f0f08f42298e60 ""
   "c:/texlive/2024/texmf-var/web2c/xetex/xelatex.fmt" 1713305505 10850660 339643980af5852d58ec5587922f5297 ""
   "c:/texlive/2024/texmf.cnf" 1713304951 713 e69b156964470283e0530f5060668171 ""
-  "preamREADME.tex" 1714135502 2284 c351dcc48b9155c5977e427c6a33d0e5 ""
+  "preamREADME.tex" 1714136941 2350 7fd899923b964e922e63e7c86b3dbfba ""
   (generated)
   ".vstex/README.aux"
   ".vstex/README.log"
