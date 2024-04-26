@@ -1,14 +1,24 @@
 # Fdb version 4
-["xdvipdfmx"] 1714138875.34689 ".vstex/README.xdv" ".vstex/README.pdf" ".vstex/README" 1714138876.48104 0
-  ".vstex/README.xdv" 1714138875 40984 16cf969798d28109f5b8ca9adf5b6447 "xelatex"
+["xdvipdfmx"] 1714151827.94607 ".vstex/README.xdv" ".vstex/README.pdf" ".vstex/README" 1714151828.57481 0
+  ".vstex/README.xdv" 1714151827 79116 a02f599842811d7e99462c9b19951224 "xelatex"
   (generated)
   ".vstex/README.pdf"
   (rewritten before read)
-["xelatex"] 1714138873.53836 "c:/Users/vmari/OneDrive - University of Delaware - o365/LaTeX Templates/LaTeX Project Basic/README/README.tex" ".vstex/README.xdv" "README" 1714138876.47716 0
-  ".vstex/README.aux" 1714138875 1677 ab6dd9f4ba6acf05ff74447ce88422f5 "xelatex"
-  ".vstex/README.toc" 1714138875 1028 db5af7a780f7a80e10de1c6a4bcf62f2 "xelatex"
-  "README.tex" 1714138872 3040 1fd0d490227d49a5a72bda24d73bd41f ""
-  "c:/Users/vmari/OneDrive - University of Delaware - o365/LaTeX Templates/LaTeX Project Basic/README/README.tex" 1714138872 3040 1fd0d490227d49a5a72bda24d73bd41f ""
+["xelatex"] 1714151826.90937 "c:/Users/vmari/OneDrive - University of Delaware - o365/LaTeX Templates/LaTeX Project Basic/README/README.tex" ".vstex/README.xdv" "README" 1714151828.57136 0
+  ".vstex/README.aux" 1714151827 2245 d028693018892c520604c90a4c4877af "xelatex"
+  ".vstex/README.toc" 1714151827 1078 cf298446567ac6feccee7560483d01b2 "xelatex"
+  "README.tex" 1714151826 8048 feef224e3ebd573fa64d796191abfb36 ""
+  "c:/Users/vmari/OneDrive - University of Delaware - o365/LaTeX Templates/LaTeX Project Basic/README/README.tex" 1714151826 8048 feef224e3ebd573fa64d796191abfb36 ""
+  "c:/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1713300378 3524 cb3e574dea2d1052e39280babc910dc8 ""
+  "c:/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm" 1713299568 1524 4414a8315f39513458b80dfc63bff03a ""
+  "c:/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm" 1713299568 1512 f21f83efb36853c0b70002322c1ab3ad ""
+  "c:/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmmi8.tfm" 1713299568 1520 eccf95517727cb11801f4f1aee3a21b4 ""
+  "c:/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmr12.tfm" 1713299568 1288 655e228510b4c2a1abe905c368440826 ""
+  "c:/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmr6.tfm" 1713299568 1300 b62933e007d01cfd073f79b963c01526 ""
+  "c:/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmr8.tfm" 1713299568 1292 21c1c5bfeaebccffdb478fd231a0997d ""
+  "c:/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm" 1713299568 1124 6c73e740cf17375f03eec0ee63599741 ""
+  "c:/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm" 1713299568 1116 933a60c408fc0a863a92debe84b2d294 ""
+  "c:/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm" 1713299568 1120 8b7d695260f3cff42e636090a8002094 ""
   "c:/texlive/2024/texmf-dist/tex/generic/iftex/iftex.sty" 1713300799 7237 bdd120a32c8fdb4b433cf9ca2e7cd98a ""
   "c:/texlive/2024/texmf-dist/tex/generic/iftex/ifvtex.sty" 1713300799 1057 525c2192b5febbd8c1f662c9468335bb ""
   "c:/texlive/2024/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty" 1713301286 17865 1a9bd36b4f98178fa551aca822290953 ""
@@ -71,9 +81,10 @@
   "c:/texlive/2024/texmf-dist/tex/latex/base/article.cls" 1713301048 20144 147463a6a579f4597269ef9565205cfe ""
   "c:/texlive/2024/texmf-dist/tex/latex/base/fontenc.sty" 1713301048 5119 a04a8b68ab4f6ce800a41f7f8012a10e ""
   "c:/texlive/2024/texmf-dist/tex/latex/base/ifthen.sty" 1713301048 5319 2b738d02ce36ada6dcdd9534940db0ee ""
-  "c:/texlive/2024/texmf-dist/tex/latex/base/size10.clo" 1713301048 8448 dbc0dbf4156c0bb9ba01a1c685d3bad0 ""
+  "c:/texlive/2024/texmf-dist/tex/latex/base/size12.clo" 1713301048 8449 f07039d8e4e89f21078d9b5137579bfc ""
   "c:/texlive/2024/texmf-dist/tex/latex/base/ts1cmr.fd" 1713301048 2430 fce77d7e103eb98b6c4d486ae1d466c0 ""
   "c:/texlive/2024/texmf-dist/tex/latex/etoolbox/etoolbox.sty" 1713300182 46845 3b58f70c6e861a13d927bff09d35ecbc ""
+  "c:/texlive/2024/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty" 1713300246 18450 88279bf67c81e69f8e3f1c1bad1a26c5 ""
   "c:/texlive/2024/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty" 1713300386 163194 e97577b0d79d363e11289d4e27baa8a4 ""
   "c:/texlive/2024/texmf-dist/tex/latex/fontspec/fontspec.cfg" 1713300386 549 c4adac819276241fea8eb79c5ab7b99e ""
   "c:/texlive/2024/texmf-dist/tex/latex/fontspec/fontspec.sty" 1713300386 3484 ff877041166391bc5ca8a1e45614784e ""
@@ -107,12 +118,13 @@
   "c:/texlive/2024/texmf-dist/tex/latex/titlesec/titlesec.sty" 1713304138 48766 0b93839be28e9744a24c45075c75b2e2 ""
   "c:/texlive/2024/texmf-dist/tex/latex/todonotes/todonotes.sty" 1713304194 21404 916e19cbd009b6d289c8194b313d3895 ""
   "c:/texlive/2024/texmf-dist/tex/latex/tools/calc.sty" 1713304202 10214 547fd4d29642cb7c80bf54b49d447f01 ""
+  "c:/texlive/2024/texmf-dist/tex/latex/tools/indentfirst.sty" 1713304202 1618 c5f08dcf49a56107311a81073b35fa4e ""
   "c:/texlive/2024/texmf-dist/tex/latex/xcolor/xcolor.sty" 1713304697 55487 80a65caedd3722f4c20a14a69e785d8f ""
   "c:/texlive/2024/texmf-dist/tex/latex/xkeyval/xkeyval.sty" 1713304783 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
   "c:/texlive/2024/texmf-dist/web2c/texmf.cnf" 1713298815 41983 7ec6bfd6bf34339a61f0f08f42298e60 ""
   "c:/texlive/2024/texmf-var/web2c/xetex/xelatex.fmt" 1713305505 10850660 339643980af5852d58ec5587922f5297 ""
   "c:/texlive/2024/texmf.cnf" 1713304951 713 e69b156964470283e0530f5060668171 ""
-  "preamREADME.tex" 1714136941 2350 7fd899923b964e922e63e7c86b3dbfba ""
+  "preamREADME.tex" 1714151230 4136 f5284de3db7c34e72698c161be0d3a88 ""
   (generated)
   ".vstex/README.aux"
   ".vstex/README.log"

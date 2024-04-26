@@ -6,9 +6,9 @@ INPUT c:/Users/vmari/OneDrive - University of Delaware - o365/LaTeX Templates/La
 OUTPUT .vstex/README.log
 INPUT c:/texlive/2024/texmf-dist/tex/latex/base/article.cls
 INPUT c:/texlive/2024/texmf-dist/tex/latex/base/article.cls
-INPUT c:/texlive/2024/texmf-dist/tex/latex/base/size10.clo
-INPUT c:/texlive/2024/texmf-dist/tex/latex/base/size10.clo
-INPUT c:/texlive/2024/texmf-dist/tex/latex/base/size10.clo
+INPUT c:/texlive/2024/texmf-dist/tex/latex/base/size12.clo
+INPUT c:/texlive/2024/texmf-dist/tex/latex/base/size12.clo
+INPUT c:/texlive/2024/texmf-dist/tex/latex/base/size12.clo
 INPUT ./preamREADME.tex
 INPUT ./preamREADME.tex
 INPUT preamREADME.tex
@@ -30,6 +30,8 @@ INPUT c:/texlive/2024/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
 INPUT c:/texlive/2024/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
 INPUT c:/texlive/2024/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 INPUT c:/texlive/2024/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+INPUT c:/texlive/2024/texmf-dist/tex/latex/tools/indentfirst.sty
+INPUT c:/texlive/2024/texmf-dist/tex/latex/tools/indentfirst.sty
 INPUT c:/texlive/2024/texmf-dist/tex/latex/fontspec/fontspec.sty
 INPUT c:/texlive/2024/texmf-dist/tex/latex/fontspec/fontspec.sty
 INPUT c:/texlive/2024/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
@@ -45,6 +47,8 @@ INPUT c:/texlive/2024/texmf-dist/tex/latex/base/fontenc.sty
 INPUT c:/texlive/2024/texmf-dist/tex/latex/fontspec/fontspec.cfg
 INPUT c:/texlive/2024/texmf-dist/tex/latex/fontspec/fontspec.cfg
 INPUT c:/texlive/2024/texmf-dist/tex/latex/fontspec/fontspec.cfg
+INPUT c:/texlive/2024/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+INPUT c:/texlive/2024/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 INPUT c:/texlive/2024/texmf-dist/tex/latex/titlesec/titlesec.sty
 INPUT c:/texlive/2024/texmf-dist/tex/latex/titlesec/titlesec.sty
 INPUT c:/texlive/2024/texmf-dist/tex/latex/outlines/outlines.sty
@@ -188,6 +192,16 @@ OUTPUT .vstex/README.aux
 INPUT c:/texlive/2024/texmf-dist/tex/latex/base/ts1cmr.fd
 INPUT c:/texlive/2024/texmf-dist/tex/latex/base/ts1cmr.fd
 INPUT c:/texlive/2024/texmf-dist/tex/latex/base/ts1cmr.fd
+INPUT c:/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map
+INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm
+INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmmi8.tfm
+INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm
+INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
+INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm
+INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm
+INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
+INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmr8.tfm
+INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmr6.tfm
 INPUT .vstex/README.toc
 INPUT .vstex/README.toc
 INPUT .vstex/README.toc

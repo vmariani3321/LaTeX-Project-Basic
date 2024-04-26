@@ -2,13 +2,41 @@
 
 %% Formatting
 \usepackage[margin = 1in]{geometry}
-\usepackage[indent = 0in, skip = 0.25\baselineskip]{parskip}
-	% \pagestyle{empty}
-% \usepackage{indentfirst}
+\usepackage[indent = 0.3in, skip = 0.25\baselineskip]{parskip}
+
+\usepackage{indentfirst}
 
 \usepackage{fontspec}
     \setmainfont{Charis SIL}
-	\setmonofont{Fira Mono}
+
+\usepackage[]{fancyhdr}
+
+% Defining some page styles: 
+	%* TIP: Replace \thepage with \thepage to link back to TOC (must be using hyperref package)
+	%* TIP: For *most* things like page numbers, sections, etc. using `\theBLANK' will print that number.
+
+	% Title - Author/Page  
+	\fancypagestyle{lTitleRAthorPage}{
+		\fancyhead[R]{\theauthorlast, \thepage} %IMPORTANT: You need to call `\authorlast{} in your preamble for this to work - otherwise it`ll default to your full author name'
+		\fancyhead[L]{\theshortdoctitle} % You can call \shorttitle{} in the preamble if your \title{} is too long (still need \title{})
+		\fancyfoot[C]{}
+		\renewcommand{\headrulewidth}{0pt}
+		} 
+
+	% - Author/Page
+	\fancypagestyle{rAuthorPage}{
+		\fancyhead[R]{\theauthorlast, \thepage}
+		\fancyhead[L]{}
+		\fancyfoot[C]{}
+		\renewcommand{\headrulewidth}{0pt}
+		} 
+
+
+
+% Sets Page Style, use "empty" or any of the above - or make your own! Using \thispagestyle{} sets the style for just the current page (good for first page)
+\pagestyle{empty}
+
+
 
 %% Section Headers
 \usepackage[explicit]{titlesec}
@@ -19,6 +47,8 @@
 	\titleformat{name =\section, numberless}{\bf\normalsize}{#1}{0pt}{\vspace*{-.5\baselineskip}}
 	\titleformat{name =\subsection, numberless}{\it\normalsize}{\textbf{#1}}{0pt}{\vspace*{-.5\baselineskip}}
 	\titleformat{name =\subsubsection, numberless}{\it\normalsize}{#1}{0pt}{\vspace*{-.5\baselineskip}}
+
+
 
 	% Enable for "Part" Section Level above Section:
 	
@@ -32,16 +62,36 @@
 %% Outline
 
 \usepackage{outlines}
-    % \renewcommand{\outlinei}{enumerate}
-    % \renewcommand{\outlineii}{enumerate}
-    % \renewcommand{\outlineiii}{enumerate}
-    % \renewcommand{\outlineiiii}{enumerate}
+	% Changes outline style from bullets to enumerated style
+	% Comment out to revert, you can use \begin{outline}[enumerate] to change a single list. 
+    \newcommand{\outlinetype}{enumerate}
+		\makeatletter
+			\let\ol@type\outlinetype % Passes \outlinetype to the correct package variable
+		\makeatother
 
-%% Title 
+
+%% Titling
 \makeatletter
+
+% For referencing where @ is other
+\newcommand{\theauthor}{\@author}
+	\newcommand{\theauthorlast}{\@authorlast}
+\newcommand{\thedate}{\@date}
+\newcommand{\thecourse}{\@course}
+\newcommand{\thedoctitle}{\@title}
+\newcommand{\theshortdoctitle}{\@shorttitle}
+
+% Author last name only 
+\def\@authorlast{\@author} % Sets @authorlast to @author unless redefined
+	\newcommand{\authorlast}[1]{\def\@authorlast{#1}}
+
+\def\@shorttitle{\@title}
+	\newcommand{\shorttitle}[1]{\def\@shorttitle{#1}}
+
     \newcommand{\course}[1]{\def\@course{#1}}
+
 	
-	\renewcommand{\maketitle}{%
+\renewcommand{\maketitle}{%
 	\noindent\@author\\
 	\@date
 	\begin{center}
@@ -49,28 +99,34 @@
 	\end{center}
 	\vspace*{\baselineskip}
 } 
-    \newcommand{\maketitlecourse}{%
-		\renewcommand{\maketitle}{%
+\newcommand{\maketitlecourse}{%
+	\renewcommand{\maketitle}{%
 		\noindent\@author\\
 		\@course\\
 		\@date
 		\begin{center}
-			\textbf{\@title}\\
+			\textbf{\@title}
 		\end{center}
 		\vspace*{\baselineskip}
 		} 
 } 
 \makeatother
 
-%% Comments/Notes
+\makeatletter
+    \let\thermargin\Gm@rmargin
+\makeatother
+
+\setlength{\marginparwidth}{\thermargin}
+\newcommand{\todowidth}{\marginparwidth-15pt}
 \usepackage[ % to do notes in document
 	size=scriptsize, 
 	tickmarkheight=0.2cm,
-	textwidth = 2in,
+	textwidth = \todowidth,
 	color=lightgray, 
 	textcolor=black,
 	colorinlistoftodos,
 	obeyFinal]{todonotes}
+
 
 	\usepackage[dvipsnames]{xcolor}
 	\todostyle{purp}{backgroundcolor=Thistle,linecolor=Thistle}

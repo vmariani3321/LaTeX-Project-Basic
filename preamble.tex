@@ -16,34 +16,24 @@
 	%* TIP: For *most* things like page numbers, sections, etc. using `\theBLANK' will print that number.
 
 	% Title - Author/Page  
-	\fancypagestyle{lTitle_rAthorPage}{
-		\fancyhead[R]{\theauthorlast\, - \thepage} %IMPORTANT: You need to call `\authorlast{} in your preamble for this to work - otherwise it`ll default to your full author name'
+	\fancypagestyle{lTitleRAthorPage}{
+		\fancyhead[R]{\theauthorlast, \thepage} %IMPORTANT: You need to call `\authorlast{} in your preamble for this to work - otherwise it`ll default to your full author name'
 		\fancyhead[L]{\theshortdoctitle} % You can call \shorttitle{} in the preamble if your \title{} is too long (still need \title{})
 		\fancyfoot[C]{}
 		\renewcommand{\headrulewidth}{0pt}
 		} 
-		\fancypagestyle{lTitle_rAthorPage_first}{ % Use \thispagestyle{} to make the first page different
-			\fancyhead[R]{\theauthorlast\, - \thepage}
-			\fancyhead[L]{\theshortdoctitle}
-			\fancyfoot[C]{}
-			\renewcommand{\headrulewidth}{0pt}
-			}
 
 	% - Author/Page
-		\fancypagestyle{rAuthorPage}{
-			\fancyhead[R]{\theauthorlast\, - \thepage}
-			\fancyhead[L]{}
-			\fancyfoot[C]{}
-			\renewcommand{\headrulewidth}{0pt}
-			} 
-		\fancypagestyle{rAuthorPage_first}{ % Use \thispagestyle{} to make the first page different
-			\fancyhead[R]{\theauthorlast - \thepage}
-			\fancyhead[L]{\thedate}
-			\fancyfoot[C]{}
-			\renewcommand{\headrulewidth}{0pt}
-			}
+	\fancypagestyle{rAuthorPage}{
+		\fancyhead[R]{\theauthorlast, \thepage}
+		\fancyhead[L]{}
+		\fancyfoot[C]{}
+		\renewcommand{\headrulewidth}{0pt}
+		} 
 
-% Sets Page Style, use `empty' or any of the above - or make your own!
+
+
+% Sets Page Style, use "empty" or any of the above - or make your own! Using \thispagestyle{} sets the style for just the current page (good for first page)
 \pagestyle{empty}
 
 
@@ -72,12 +62,11 @@
 %% Outline
 
 \usepackage{outlines}
-	% Changes outline style from bullets to enumerated style
-	% Comment out to revert, you can use \begin{outline}[enumerate] to change a single list. 
-    \renewcommand{\outlinei}{enumerate}
-    \renewcommand{\outlineii}{enumerate}
-    \renewcommand{\outlineiii}{enumerate}
-    \renewcommand{\outlineiiii}{enumerate}
+	% Changes outline style from bullets to enumerated style. Use environment option to change
+	\newcommand{\outlinetype}{enumerate}
+		\makeatletter
+			\let\ol@type\outlinetype % Passes \outlinetype to the correct package variable
+		\makeatother
 
 %% Titling
 \makeatletter
@@ -122,17 +111,26 @@
 \makeatother
 
 %% Comments/Notes
+
+\makeatletter % Fetches the length of the right margin
+    \let\thermargin\Gm@rmargin
+\makeatother
+	\setlength{\marginparwidth}{\thermargin} % Sets the margin annotation width to the right margin
+	\newcommand{\todowidth}{\marginparwidth-15pt} % Creates a length that's 15pts smaller for the width of the todo notes.
+
 \usepackage[ % to do notes in document
 	size=scriptsize, 
 	tickmarkheight=0.2cm,
-	textwidth = 2in,
+	textwidth = \todowidth,
 	color=lightgray, 
 	textcolor=black,
 	colorinlistoftodos,
 	obeyFinal]{todonotes}
+
 
 	\usepackage[dvipsnames]{xcolor}
 	\todostyle{purp}{backgroundcolor=Thistle,linecolor=Thistle}
 	\todostyle{red}{color=WildStrawberry}
 	\todostyle{blue}{color=Cerulean}
 	\todostyle{green}{color=PineGreen}
+

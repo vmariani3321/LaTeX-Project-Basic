@@ -1,15 +1,16 @@
 \contentsline {section}{\numberline {1}Intro to \LaTeX }{1}{}%
 \contentsline {subsection}{\numberline {1.1}How does this work?}{1}{}%
-\contentsline {subsection}{\numberline {1.2}General Terminology}{1}{}%
-\contentsline {subsection}{\numberline {1.3}General Useful Commands}{1}{}%
-\contentsline {section}{\numberline {2}The Preamble}{1}{}%
-\contentsline {subsection}{\numberline {2.1}What's a preamble?}{1}{}%
-\contentsline {subsection}{\numberline {2.2}Using preamble.tex}{1}{}%
-\contentsline {subsection}{\numberline {2.3}Packages and Commands Explained}{1}{}%
-\contentsline {subsubsection}{\numberline {2.3.1}geometry}{1}{}%
-\contentsline {subsubsection}{\numberline {2.3.2}\texttt {parskip}}{2}{}%
+\contentsline {subsection}{\numberline {1.2}General Useful Commands}{1}{}%
+\contentsline {section}{\numberline {2}The Preamble}{2}{}%
+\contentsline {subsection}{\numberline {2.1}What's a preamble?}{2}{}%
+\contentsline {subsection}{\numberline {2.2}Using preamble.tex}{2}{}%
+\contentsline {subsection}{\numberline {2.3}Packages and Commands Explained}{2}{}%
+\contentsline {subsubsection}{\numberline {2.3.1}geometry}{2}{}%
+\contentsline {subsubsection}{\numberline {2.3.2}parskip}{2}{}%
 \contentsline {subsubsection}{\numberline {2.3.3}indentfirst}{2}{}%
-\contentsline {subsubsection}{\numberline {2.3.4}fontspec}{2}{}%
-\contentsline {subsubsection}{\numberline {2.3.5}fancyhdr}{2}{}%
-\contentsline {subsubsection}{\numberline {2.3.6}titlesec}{2}{}%
-\contentsline {subsubsection}{\numberline {2.3.7}Outline}{2}{}%
+\contentsline {subsubsection}{\numberline {2.3.4}fontspec}{3}{}%
+\contentsline {subsubsection}{\numberline {2.3.5}fancyhdr}{3}{}%
+\contentsline {subsubsection}{\numberline {2.3.6}titlesec}{3}{}%
+\contentsline {subsubsection}{\numberline {2.3.7}outlines}{3}{}%
+\contentsline {subsubsection}{\numberline {2.3.8}Titling}{4}{}%
+\contentsline {subsubsection}{\numberline {2.3.9}todonotes}{4}{}%

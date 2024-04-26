@@ -1,4 +1,4 @@
-\documentclass{article}
+\documentclass[12pt]{article}
 \input{preamREADME.tex}
 
 %%%% Packages %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -31,17 +31,32 @@ This folder contains the essential files for a basic paper in \LaTeX.
 
 \subsection{How does this work?}
 
-\subsection{General Terminology}
-
 \subsection{General Useful Commands}
+
+\begin{outline}[itemize]
+    \1 Insert Spacing
+        \2 \texttt{\textbackslash vspace\{l\}} and \texttt{\textbackslash hspace\{l\}}
+            \3 Inserts a vertical or horizontal space of length \{l\}.
+        \2 New line : \texttt{\textbackslash\textbackslash}
+            \3 Two backslashes make a line break
+
+    \1 Text Styles
+        \2 \texttt{\textbackslash textbf}: \textbf{bold}
+        \2 \texttt{\textbackslash textit}: \textit{italic}
+    \1 Lengths
+        \2 \texttt{ex}: x-height. 
+        \2 \texttt{em}: m-width
+        \2 \texttt{in, cm, pt}: number in regular units
+        \2 \texttt{\textbackslash baselineskip}:  Line height
+            \3 can be preceeded by a number for a multiple / a negative
+    \1 Other Commands
+\end{outline}
 
 \section{The Preamble}
 
-
-
 \subsection{What's a preamble?}
 
-The preamble to a LaTeX document consists of everything before \texttt{\textbackslash begin{document}} is called, and must begin with a \texttt{\textbackslash documentclass{}} call. The default document class in this template is \texttt{article}, but you may change it as you wish.
+The preamble to a LaTeX document consists of everything before \texttt{\textbackslash begin{document}} is called, and must begin with a \texttt{\textbackslash documentclass\{\}} call. The default document class in this template is \texttt{article}, but you may change it as you wish.
 
 \subsection{Using preamble.tex}
 
@@ -63,7 +78,7 @@ Packages: \texttt{geometry, parskip, indentfirst, fontspec}
         \item \texttt{paperwidth, paperheight}: Sets custom page size
     \end{itemize}
 
-\subsubsection{\texttt{parskip}}
+\subsubsection{parskip}
 
     The package \texttt{parskip} sets the paragraph indent size and skip size between paragraphs. 
 
@@ -83,11 +98,66 @@ Packages: \texttt{geometry, parskip, indentfirst, fontspec}
 
 \subsubsection{fancyhdr}
 
-    \texttt{\textbackslash pagestyle{empty}}
+    The package \texttt{fancyhdr} allows for custom headers and footers. 
+
+    This template defines two styles: ``lTitleRAuthorPage'' and ``rAuthorPage''. 
+    
+    ``lTitleRAuthorPage'' has the title of the document (set by the command \texttt{\textbackslash title\{\}} -- if the title is too long, set a different one just for the header with \texttt{\textbackslash shorttitle\{\}}), and the author's name (defaults to the name set by \texttt{\textbackslash author\{\}}, but just the last name can be shown by also setting \texttt{\textbackslash authorlast\{\}}) and page number on the right. ``rAuthorPage'' just has the author name and page number on the right. 
+
+    The default page style for the template is provided by \LaTeX: the ``empty'' style - this has no headers or footers. For just a page number in the footer, you can use the ``plain'' style. You can also choose a different page style for a particular page (good fot title page) by using \texttt{\textbackslash thispagestyle\{\}}
+
+    If you need to define your own style, you can just redo the code in the preamble to make a new one, and use \texttt{\textbackslash pagestyle\{\}} to set that style. 
 
 \subsubsection{titlesec}
 
-\subsubsection{Outline}
+    The package \texttt{titlesec} sets the formatting for section headers, called with the commands \texttt{\textbackslash section\{\}, \textbackslash subsection\{\}, \textbackslash subsubsection\{\}}. Each section is numbered. For an unnumbered section, use the starred variant of the command, as in \texttt{\textbackslash section*\{\}}.
+
+    There is a commented out definition for a ``part'' heading level, if you wish to use that. 
+
+
+\subsubsection{outlines}
+
+    The \texttt{outlines} package defines an \texttt{outline} environment which can be used to create nested lists easily. To make an outline, use the following code:
+
+    \texttt{\textbackslash begin{outline}
+                \textbackslash 0 This makes a normal paragraph
+                    \textbackslash 1 Level 1
+                        \textbackslash 2 Level 2
+                            \textbackslash 3 Level 3
+                                \textbackslash 4 Level 4
+            \textbackslash end{outline}
+    }
+
+    Which produces: 
+
+        \begin{outline}
+            \0 This makes a normal paragraph
+                \1 Level 1
+                    \2 Level 2
+                        \3 Level 3
+                            \4 Level 4
+        \end{outline}
+
+
+
+    The template default is to use the \texttt{enumerate} environment, but you can change the list type to \texttt{itemize}. Alternatively, you can use \texttt{\textbackslash begin{outline}[itemize]} to make a single list bulleted. You can also do the opposite by making\texttt{itemize} default and using \texttt{[enumerate]} for the individual list.
+
+\subsubsection{Titling}
+
+    The section labeled ``Titling'' is used to define the style of the \texttt{\textbackslash maketitle} command, and to define commands to set the author's last name, course name (line 2 of the header) and short document title. 
+
+    One thing to notice is the commands \texttt{\textbackslash makeatletter} and \texttt{\textbackslash makeatother}. Each character in \LaTeX is assigned a character class, which the compiler uses to determine what's a command and what's not. Changing \@ to a letter lets us define some additional commands that won't be able to be called when \@ is set to the other class. For the vast majority of things outside of designing packages and setting certain commands, you won't need this. 
+
+\subsubsection{todonotes}
+
+    The package \texttt{todonotes} allows you to put notes into the margin of a document. I've set some defaults for the style of the notes, as well as defining four color options that can be called with \texttt{\textbackslash todo[purp]{This is the note.}}\todo[purp]{This is the note.} 
+
+    Notes by default will appear in the right margin, 15pts from the edge of the page. You can change that by adjusting the definition of \texttt{\textbackslash todowidth} command. You can also use the ``noline'' option to not draw a line between the margin and the text, or the ``inline'' option to place the todonote on the page like this:
+
+    \texttt{\textbackslash todo[red, inline]{This is an inline note.}}
+    \todo[red, inline]{This is an inline note.}
+
+
 
 %%%% End Document %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \end{document}
