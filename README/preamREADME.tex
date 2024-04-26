@@ -1,0 +1,77 @@
+
+
+%% Formatting
+\usepackage[margin = 1in]{geometry}
+\usepackage[indent = 0.3in, skip = 0.25\baselineskip]{parskip}
+\pagestyle{empty}
+\usepackage{indentfirst}
+
+\usepackage{fontspec}
+    \setmainfont{Charis SIL}
+	\setmonofont{Fira Mono}
+
+%% Section Headers
+\usepackage[explicit]{titlesec}
+	\titleformat{\section}{\bf\normalsize}{\thesection \quad #1}{0pt}{\vspace*{-.5\baselineskip}}
+	\titleformat{\subsection}{\it\normalsize}{\textbf{\thesubsection} \quad \textbf{#1}}{0pt}{\vspace*{-.5\baselineskip}}
+	\titleformat{\subsubsection}{\it\normalsize}{\thesubsubsection \quad #1}{0pt}{\vspace*{-.5\baselineskip}}
+
+	\titleformat{name =\section, numberless}{\bf\normalsize}{#1}{0pt}{\vspace*{-.5\baselineskip}}
+	\titleformat{name =\subsection, numberless}{\it\normalsize}{\textbf{#1}}{0pt}{\vspace*{-.5\baselineskip}}
+	\titleformat{name =\subsubsection, numberless}{\it\normalsize}{#1}{0pt}{\vspace*{-.5\baselineskip}}
+
+	% Enable for "Part" Section Level above Section:
+	
+		% \titleclass{\part}{straight}[\chapter]
+		% \renewcommand{\thepart}{\Roman{part}}
+
+		% \titleformat{\part}{\bf\normalsize}{\underline{Part \thepart \quad #1}}{0pt}{\setcounter{section}{0}}
+
+		% \titleformat{name =\part, numberless}{\bf\normalsize}{\underline{#1}}{0pt}{}
+
+%% Outline
+
+\usepackage{outlines}
+    \renewcommand{\outlinei}{enumerate}
+    \renewcommand{\outlineii}{enumerate}
+    \renewcommand{\outlineiii}{enumerate}
+    \renewcommand{\outlineiiii}{enumerate}
+
+%% Title 
+\makeatletter
+    \newcommand{\course}[1]{\def\@course{#1}}
+	
+	\renewcommand{\maketitle}{%
+	\noindent\@author\\
+	\@date
+	\begin{center}
+		\textbf{\@title}
+	\end{center}
+} 
+    \newcommand{\maketitlecourse}{%
+		\renewcommand{\maketitle}{%
+		\noindent\@author\\
+		\@course\\
+		\@date
+		\begin{center}
+			\textbf{\@title}
+		\end{center}
+		} 
+} 
+\makeatother
+
+%% Comments/Notes
+\usepackage[ % to do notes in document
+	size=scriptsize, 
+	tickmarkheight=0.2cm,
+	textwidth = 2in,
+	color=lightgray, 
+	textcolor=black,
+	colorinlistoftodos,
+	obeyFinal]{todonotes}
+
+	\usepackage[dvipsnames]{xcolor}
+	\todostyle{purp}{backgroundcolor=Thistle,linecolor=Thistle}
+	\todostyle{red}{color=WildStrawberry}
+	\todostyle{blue}{color=Cerulean}
+	\todostyle{green}{color=PineGreen}

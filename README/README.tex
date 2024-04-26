@@ -1,0 +1,67 @@
+\documentclass{article}
+\input{preamREADME.tex}
+
+%%%% Packages %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%%%% Titling %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\author{Vincent N. Mariani}
+\date{\today}
+\course{}
+\title{LaTeX Basic Template (v0.1)}
+%%%% Begin Document %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+    \maketitle%course
+%%%% Body %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+This folder contains the essential files for a basic paper in \LaTeX. 
+
+Files:\\
+\begin{itemize}
+    \item README.pdf
+    \item preamble.tex
+    \item root.tex
+\end{itemize}
+
+\tableofcontents
+
+\section{Intro to \LaTeX}
+
+\subsection{How does this work?}
+
+\subsection{General Terminology}
+
+\subsection{General Useful Commands}
+
+\section{The Preamble}
+
+
+
+\subsection{What's a preamble?}
+
+The preamble to a LaTeX document consists of everything before \texttt{\textbackslash begin{document}} is called, and must begin with a \texttt{\textbackslash documentclass{}} call. The default document class in this template is \texttt{article}, but you may change it as you wish.
+
+\subsection{Using preamble.tex}
+
+In this folder, there is a ``preamble.tex'' file that contains formatting and layout packages and settings. This bit of the README goes over what's in there: 
+
+
+\subsubsection{Formatting}
+
+Packages: \texttt{geometry, parskip, indentfirst, fontspec}
+
+1. \texttt{geometry}
+
+    The package \texttt{geometry} provides settings related to page layout and size. The default setting for this template is \texttt{[margin = 1in]}, providing 1in margins all around. 
+
+    Some useful package options to know are: 
+
+    \begin{itemize}
+        \item \texttt{left, right, top, bottom}: These will set the margins individually. Use the same syntax as \texttt{[margin = 1in]}, so \texttt{[left = 1in]}
+    \end{itemize}
+
+
+
+%%%% End Document %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
