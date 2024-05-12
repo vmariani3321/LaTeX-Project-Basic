@@ -1,16 +1,18 @@
-\contentsline {section}{\numberline {1}Intro to \LaTeX }{1}{}%
-\contentsline {subsection}{\numberline {1.1}How does this work?}{1}{}%
-\contentsline {subsection}{\numberline {1.2}General Useful Commands}{1}{}%
-\contentsline {section}{\numberline {2}The Preamble}{2}{}%
-\contentsline {subsection}{\numberline {2.1}What's a preamble?}{2}{}%
-\contentsline {subsection}{\numberline {2.2}Using preamble.tex}{2}{}%
-\contentsline {subsection}{\numberline {2.3}Packages and Commands Explained}{2}{}%
-\contentsline {subsubsection}{\numberline {2.3.1}geometry}{2}{}%
-\contentsline {subsubsection}{\numberline {2.3.2}parskip}{2}{}%
-\contentsline {subsubsection}{\numberline {2.3.3}indentfirst}{2}{}%
-\contentsline {subsubsection}{\numberline {2.3.4}fontspec}{3}{}%
-\contentsline {subsubsection}{\numberline {2.3.5}fancyhdr}{3}{}%
-\contentsline {subsubsection}{\numberline {2.3.6}titlesec}{3}{}%
-\contentsline {subsubsection}{\numberline {2.3.7}outlines}{3}{}%
-\contentsline {subsubsection}{\numberline {2.3.8}Titling}{4}{}%
-\contentsline {subsubsection}{\numberline {2.3.9}todonotes}{4}{}%
+\contentsline {section}{\numberline {1}Intro to \LaTeX }{1}{section.1}%
+\contentsline {subsection}{\numberline {1.1}How does this work?}{1}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}General Useful Commands}{1}{subsection.1.2}%
+\contentsline {section}{\numberline {2}The Preamble}{2}{section.2}%
+\contentsline {subsection}{\numberline {2.1}What's a preamble?}{2}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Using preamble.tex}{2}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Packages and Commands Explained}{2}{subsection.2.3}%
+\contentsline {subsubsection}{\numberline {2.3.1}geometry}{2}{subsubsection.2.3.1}%
+\contentsline {subsubsection}{\numberline {2.3.2}parskip}{2}{subsubsection.2.3.2}%
+\contentsline {subsubsection}{\numberline {2.3.3}setspace}{3}{subsubsection.2.3.3}%
+\contentsline {subsubsection}{\numberline {2.3.4}fontspec}{3}{subsubsection.2.3.4}%
+\contentsline {subsubsection}{\numberline {2.3.5}fancyhdr}{3}{subsubsection.2.3.5}%
+\contentsline {subsubsection}{\numberline {2.3.6}titlesec}{3}{subsubsection.2.3.6}%
+\contentsline {subsubsection}{\numberline {2.3.7}outlines}{3}{subsubsection.2.3.7}%
+\contentsline {subsubsection}{\numberline {2.3.8}Titling}{4}{subsubsection.2.3.8}%
+\contentsline {subsubsection}{\numberline {2.3.9}todonotes}{4}{subsubsection.2.3.9}%
+\contentsline {section}{\numberline {3}Useful Packages}{4}{section.3}%
+\contentsline {subsubsection}{\numberline {3.0.1}indentfirst}{4}{subsubsection.3.0.1}%

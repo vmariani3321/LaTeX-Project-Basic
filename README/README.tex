@@ -1,8 +1,12 @@
+%% Current Release: v.0.1
+%% Working Version: v.0.1.1
+
+
 \documentclass[12pt]{article}
 \input{preamREADME.tex}
 
 %%%% Packages %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+\usepackage[hidelinks]{hyperref}
 
 
 %%%% Titling %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -82,9 +86,8 @@ Packages: \texttt{geometry, parskip, indentfirst, fontspec}
 
     The package \texttt{parskip} sets the paragraph indent size and skip size between paragraphs. 
 
-\subsubsection{indentfirst}
-
-    Indents the first paragraph of each section (\LaTeX default is to not indent that)
+\subsubsection{setspace}
+    The package \texttt{setspace} enables easy line-spacing commands that can be called anywhere in the document: \texttt{\textbackslash singlespacing, \textbackslash onehalfspacing,} and \texttt{\textbackslash doublespacing}. 
 
 \subsubsection{fontspec}
 
@@ -157,7 +160,11 @@ Packages: \texttt{geometry, parskip, indentfirst, fontspec}
     \texttt{\textbackslash todo[red, inline]{This is an inline note.}}
     \todo[red, inline]{This is an inline note.}
 
+\section{Useful Packages}
 
+\subsubsection{indentfirst}
+
+        The \texttt{indentfirst} package sets the first paragraph of the paper/section to be indented on the first line like the other paragraphs. 
 
 %%%% End Document %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \end{document}
